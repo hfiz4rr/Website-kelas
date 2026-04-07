@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi | X RPL 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Override & Additional Styles for Professional Look */
+        .structure-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        .role-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .member-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid #1e90ff; /* Aksen garis atas profesional */
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            min-width: 240px;
+            flex: 0 1 280px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .member-card:hover {
+            background: rgba(30, 144, 255, 0.05);
+            border-color: #00f2ff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Label Jabatan */
+        .role-label {
+            color: #00f2ff;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .member-card h4 {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Garis Penghubung Minimalis */
+        .line {
+            width: 1px;
+            height: 40px;
+            background: rgba(0, 242, 255, 0.3);
+        }
+
+        /* Section Title di dalam Card */
+        .tier-title {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .member-card {
+                flex: 1 1 100%;
+                padding: 20px;
+            }
+            .role-group {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>SMKN 4 Kota Tangerang</h1>
+        <p>Manajemen Internal Kelas <span>X RPL 1</span></p>
+    </div>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="struktur.html" class="active">Struktur</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="memory.html">Memory</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="card fade-in">
+        <div class="structure-wrapper">
+            
+            <p class="tier-title">Pembimbing</p>
+            <div class="role-group">
+                <div class="member-card">
+                    <span class="role-label">Wali Kelas</span>
+                    <h4>Aprizal S.Pd</h4>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <p class="tier-title">Pimpinan Kelas</p>
+            <div class="role-group">
+                <div class="member-card">
+                    <span class="role-label">Ketua Kelas</span>
+                    <h4>Nesya</h4>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <p class="tier-title">Administrasi & Keuangan</p>
+            <div class="role-group">
+                <div class="member-card">
+                    <span class="role-label">Wakil Ketua</span>
+                    <h4>Dito</h4>
+                </div>
+                <div class="member-card">
+                    <span class="role-label">Sekretaris</span>
+                    <h4>Azizah</h4>
+                </div>
+                <div class="member-card">
+                    <span class="role-label">Bendahara</span>
+                    <h4>Reda</h4>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <p class="tier-title">Divisi Lapangan</p>
+            <div class="role-group">
+                <div class="member-card">
+                    <span class="role-label">Seksi Kebersihan</span>
+                    <h4>Panji</h4>
+                </div>
+                <div class="member-card">
+                    <span class="role-label">Seksi Keamanan</span>
+                    <h4>Alfiyan</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p style="font-size: 0.85rem; color: #64748b;">&copy; 2026 <strong>X RPL 1</strong> • SMKN 4 Kota Tangerang</p>
+</footer>
+
+</body>
+</html>
